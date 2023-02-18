@@ -36,4 +36,14 @@ document.getElementById('rhombus').addEventListener('click',function(){
 });
 
 
+document.getElementById('pentagon').addEventListener('click',function(){
+    serialNumber++;
+    const name=getTextElementById('pentagon-name')
+    const base=getInputValue('pentagon-height');
+    const height=getInputValue('pentagon-base'); 
+    const area=0.5*base*height; 
+    displayData(serialNumber,name,area)
+});
+
+
 
