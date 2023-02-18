@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="bg-sky-400">
+        <section class="bg-gray-400 w-[90%] mx-auto p-12">
+            <div>
+                <h1 class="text-2xl font-bold text-blue-800 mb-1">What is DOM and what is the purpose of DOM?</h1>
+                <p>DOM is an acronym that stands for Document Object Model. It’s how a web browser represents a web page internally. <br>
+                    The DOM determines what content should be on a page and how each element of the content relates to the other elements. Let’s look at each word of the acronym.</p>
+                <h1 class="font-semibold text-2xl ">Purpose of DOM</h1>
+                <p>By manipulating the DOM, we have infinite possibilities. We can create applications that update the data of the page without needing a refresh. Also, we can create applications that are customizable by the user and then change the layout of the page without a refresh. We can drag, move, and delete elements.</p>
+            </div>
+            <div>
+                <h1 class="text-2xl mt-3 text-blue-800 font-bold mb-1">How will you select HTML elements using DOM? Name the DOM methods.</h1>
+                <p>DOM Selectors, as the name suggests is used to select HTML elements within a document using JavaScript. There are 5 ways in which you can select elements in a DOM using selectors. <br>
+                    <ol class="list-decimal ml-20">
+                        <li>getElementsByTagName()</li>
+                        <li>getElementsByClassName()</li>
+                        <li>getElementById()</li>
+                        <li>querySelector()</li>
+                        <li>querySelectorAll()</li>
+                      </ol>
+                    <p>All those methods are properties of the document object. So in order to use one, we should prefix those elements with the document object as,</p>
+
+                    <ol class="list-disc ml-20">
+                        <li>document.getElementByTagName()</li>
+                        <li>document.getElementsByClassName()</li>
+                        <li>document.getElementById()</li>
+                        <li>document.querySelector()</li>
+                        <li>document.querySelectorAll()</li>
+                    </ol>
+                   </p>
+            </div>
+            <div>
+                <h1 class="text-2xl font-bold mt-4 text-blue-800 mb-1">What is event bubble?</h1>
+                <p>Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.</p>
+            </div>
+            <div class="mt-6">
+                <h class="text-2xl text-blue-800 font-bold mb-1">What is a callback function and why will you use it?</h>
+                <p>A JavaScript callback is a function which is to be executed after another function has finished execution.
+                    A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.</p>
+                    <p class="text-2xl font-semibold my-2">Need of Callback functions</p>
+                    <p>We need callback functions because many JavaScript actions are asynchronous, which means they don't really stop the program (or a function) from running until they're completed, as you're probably used to. Instead, it will execute in the background while the rest of the code runs.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
