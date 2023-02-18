@@ -24,5 +24,16 @@ document.getElementById('Parallelogram').addEventListener('click',function(){
     const height=getInputValue('Parallelogram-height'); 
     const area=base*height; 
     displayData(serialNumber,name,area)
-})
+});
+
+document.getElementById('rhombus').addEventListener('click',function(){
+    serialNumber++;
+    const name=getTextElementById('rhombus-name')
+    const base=getInputValue('rhombus-diagonal-1');
+    const height=getInputValue('rhombus-diagonal-2'); 
+    const area=0.5*base*height; 
+    displayData(serialNumber,name,area)
+});
+
+
 
