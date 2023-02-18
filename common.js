@@ -31,3 +31,8 @@ function displayData(serialNumber,shapeName,area){
     const tableBody=document.getElementById('t-body');
     tableBody.appendChild(tr);
 };
+
+
+function convertToMeter(number){
+    return (number/100);
+}
