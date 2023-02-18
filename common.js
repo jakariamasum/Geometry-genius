@@ -19,8 +19,7 @@ function getTextElementById(event) {
 function displayData(serialNumber, shapeName, area) {
     const tr = document.createElement('tr');
     tr.innerHTML = `
-    <td>${serialNumber}</td>
-    <td>${shapeName}</td>
+    <td>${serialNumber+'.'+shapeName}</td>
     <td>${area.innerHTML =
         `${area}cm<sup>2</sup>`}
         </td>
@@ -57,7 +56,7 @@ for (const eachClass of allClass) {
 function checkInput(base,height){
     if(isNaN(base)|| isNaN(height) || base<0 || height<0)
     {
-        alert('invalid');
+        alert('Please provide valid input');
         return false;
     }
     else 
