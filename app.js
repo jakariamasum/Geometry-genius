@@ -44,6 +44,14 @@ document.getElementById('pentagon').addEventListener('click',function(){
     const area=0.5*base*height; 
     displayData(serialNumber,name,area)
 });
+document.getElementById('ellipse').addEventListener('click',function(){
+    serialNumber++;
+    const name=getTextElementById('ellipse-name')
+    const base=getInputValue('ellipse-base');
+    const height=getInputValue('ellipse-height'); 
+    const area=3.14*base*height; 
+    displayData(serialNumber,name,area)
+});
 
 
 
