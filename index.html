@@ -9,8 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+  <!-- navbar section -->
     <header>
-        <div class="navbar bg-[#E8F4FC] mt-4 shadow-2xl lg:mb-20,px-12">
+        <div class="navbar bg-[#E8F4FC] mt-4 shadow-2xl lg:mb-20 px-12">
             <div class="navbar-start py-4">
               <a class="btn btn-ghost normal-case text-xl flex flex-col text-5xl font-semibold"> Interactive <br> Geometry Book
             </a>
@@ -20,9 +21,12 @@
             </div>
           </div>
     </header> 
+
     <main>
-        <section class=" mt-5 flex flex-col lg:flex-row lg:px-8 ">
+      <section class=" mt-5 flex flex-col lg:flex-row lg:px-8 ">
+          <!-- shape section -->
             <div class="w-full grid gap-4 md:grid-cols-2 w-[70%] lg:grid-cols-3 w-[70%]">
+              <!-- triangle shape -->
                 <div class="card w-full bg-base-100 shadow-xl border-solid border-2 border-gray-300 hover:border-sky-600">
                     <figure class="px-10 pt-10">
                       <img src="images/triangle.png" alt="Triangle" class="rounded-xl" />
@@ -33,13 +37,13 @@
                       <div class="flex">
                         <input id="triangle-base" type="text" placeholder="b" class="input input-bordered input-sm w-full max-w-xs mx-2" />cm <input id="triangle-height" type="text" placeholder="h" class="input input-bordered input-sm w-full max-w-xs mx-3" />cm
                       </div>
-
-
                       <div class="card-actions">
                         <button id="triangle" class="btn btn-primary bg-[#1090D8] mt-3 border-none lg:px-20">Calculate Now</button>
                       </div>
                     </div>
                   </div>
+
+                  <!-- rectangle shape -->
                 <div class="card w-full bg-base-100 shadow-xl border-solid border-2 border-gray-300 hover:border-sky-600">
                     <figure class="px-10 pt-10">
                       <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
@@ -50,13 +54,13 @@
                       <div class="flex">
                         <input id="rectangle-width" type="text" placeholder="w" class="input input-bordered input-sm w-full max-w-xs mx-2" />cm <input id="rectangle-length" type="text" placeholder="l" class="input input-bordered input-sm w-full max-w-xs mx-3" />cm
                       </div>
-
-
                       <div class="card-actions">
                         <button id="rectangle" class="btn btn-primary bg-[#1090D8] mt-3 border-none lg:px-20">Calculate Now</button>
                       </div>
                     </div>
                   </div>
+
+                  <!-- parallelogram -->
                 <div class="card w-full bg-base-100 shadow-xl border-solid border-2 border-gray-300 hover:border-sky-600">
                     <figure class="px-10 pt-10">
                       <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
@@ -67,13 +71,14 @@
                       <div class="flex">
                         <input id="Parallelogram-base" type="text" placeholder="b" class="input input-bordered input-sm w-full max-w-xs mx-2" />cm <input id="Parallelogram-height" type="text" placeholder="h" class="input input-bordered input-sm w-full max-w-xs mx-3" />cm
                       </div>
-
-
                       <div class="card-actions">
                         <button id="Parallelogram" class="btn btn-primary bg-[#1090D8] mt-3 border-none lg:px-20">Calculate Now</button>
                       </div>
                     </div>
                   </div>
+
+
+                  <!-- rhombus shape -->
                 <div class="card w-full bg-base-100 shadow-xl border-solid border-2 border-gray-300 hover:border-sky-600">
                     <figure class="px-10 pt-10">
                       <img src="images/rhombus.png" alt="Rhombus" class="rounded-xl" />
@@ -84,13 +89,14 @@
                       <div class="flex">
                         <input id="rhombus-diagonal-1" type="text" placeholder="d1" class="input input-bordered input-sm w-full max-w-xs mx-2" />cm <input id="rhombus-diagonal-2" type="text" placeholder="d2" class="input input-bordered input-sm w-full max-w-xs mx-3" />cm
                       </div>
-
-
                       <div class="card-actions">
                         <button id="rhombus" class="btn btn-primary bg-[#1090D8] mt-3 border-none lg:px-20">Calculate Now</button>
                       </div>
                     </div>
                   </div>
+
+
+                  <!-- pentagon shape -->
                 <div class="card w-full bg-base-100 shadow-xl border-solid border-2 border-gray-300 hover:border-sky-600">
                     <figure class="px-10 pt-10">
                       <img src="images/pentagon.png" alt="Pentagon" class="rounded-xl" />
@@ -101,13 +107,13 @@
                       <div class="flex">
                         <input id="pentagon-height" type="text" placeholder="p" class="input input-bordered input-sm w-full max-w-xs mx-2" /><p>cm</p> <input id="pentagon-base" type="text" placeholder="b" class="input input-bordered input-sm w-full max-w-xs mx-3" /><p>cm</p>
                       </div>
-
-
                       <div class="card-actions">
                         <button id="pentagon" class=" text-center btn btn-primary bg-[#1090D8] mt-3 border-none lg:px-20">Calculate Now</button>
                       </div>
                     </div>
                   </div>
+
+                  <!-- ellipse shape -->
                 <div class="card w-full bg-base-100 shadow-xl border-solid border-2 border-gray-300 hover:border-sky-600">
                     <figure class="px-10 pt-10">
                       <img src="images/ellipse.png" alt="Ellipse" class="rounded-xl" />
@@ -118,16 +124,15 @@
                       <div class="flex">
                         <input id="ellipse-base" type="text" placeholder="b" class="input input-bordered input-sm w-full max-w-xs mx-2" />cm <input id="ellipse-height" type="text" placeholder="h" class="input input-bordered input-sm w-full max-w-xs mx-3" />cm
                       </div>
-
-
                       <div class="card-actions">
                         <button id="ellipse" class="btn btn-primary bg-[#1090D8] mt-3 border-none lg:px-20">Calculate Now</button>
                       </div>
                     </div>
-                  </div>
-                
-                  
+                  </div>     
             </div>
+
+            
+            <!-- calculation area section -->
             <div class="w-full border-solid border-2 border-gray-300  lg:w-[30%] mt-3 lg:mx-2">
                 <h1 class="text-3xl text-center underline">Area Calculation</h1>
                 <section>
@@ -142,7 +147,7 @@
                             </tr>
                           </thead>
                           <tbody id="t-body">
-                            <!-- row 1 -->
+                            <!-- row  -->
                            
                           </tbody>
                         </table>

@@ -13,16 +13,18 @@
 <body>
     <main class="bg-sky-400">
         <section class="bg-gray-400 w-[90%] mx-auto p-12">
+            <!-- first question -->
             <div>
                 <h1 class="text-2xl font-bold text-blue-800 mb-1">What is DOM and what is the purpose of DOM?</h1>
-                <p>DOM is an acronym that stands for Document Object Model. It’s how a web browser represents a web page internally. <br>
-                    The DOM determines what content should be on a page and how each element of the content relates to the other elements. Let’s look at each word of the acronym.</p>
+                <p>DOM is an acronym that stands for Document Object Model. When a webpage or HTML page loads in the browser, browser creates aDOM for the page.It’s how a web browser represents a web page internally</p>
                 <h1 class="font-semibold text-2xl ">Purpose of DOM</h1>
-                <p>By manipulating the DOM, we have infinite possibilities. We can create applications that update the data of the page without needing a refresh. Also, we can create applications that are customizable by the user and then change the layout of the page without a refresh. We can drag, move, and delete elements.</p>
+                <p>DOM is W3 standard to understand the structure of HTML pages so that we can create, read, delete and manage DOM elements using JavaScript DOM methods <br>
+                HTML DOM helps us to to understand and control the element structure using JavaScript methods. If we understand the DOM structure of a HTML structure of a HTML page, we can easily controls its elements, attributes and all nodes.</p>
             </div>
+            <!-- second question -->
             <div>
                 <h1 class="text-2xl mt-3 text-blue-800 font-bold mb-1">How will you select HTML elements using DOM? Name the DOM methods.</h1>
-                <p>DOM Selectors, as the name suggests is used to select HTML elements within a document using JavaScript. There are 5 ways in which you can select elements in a DOM using selectors. <br>
+                <p>There are 5 ways in which you can select elements in a DOM using selectors. <br>
                     <ol class="list-decimal ml-20">
                         <li>getElementsByTagName()</li>
                         <li>getElementsByClassName()</li>
@@ -42,12 +44,15 @@
                    </p>
             </div>
             <div>
+                <!-- third question -->
                 <h1 class="text-2xl font-bold mt-4 text-blue-800 mb-1">What is event bubble?</h1>
-                <p>Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.</p>
+                <p>In the event bubble model, an event starts at the most specific element and then flows upward toward the least specific element.Let's look at the below figure:</p>
+                <img src="images/bubble.png" class="ml-4 my-4">
             </div>
+            <!-- fourth question -->
             <div class="mt-6">
                 <h class="text-2xl text-blue-800 font-bold mb-1">What is a callback function and why will you use it?</h>
-                <p>A JavaScript callback is a function which is to be executed after another function has finished execution.
+                <p>A callback function is a function  passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
                     A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.</p>
                     <p class="text-2xl font-semibold my-2">Need of Callback functions</p>
                     <p>We need callback functions because many JavaScript actions are asynchronous, which means they don't really stop the program (or a function) from running until they're completed, as you're probably used to. Instead, it will execute in the background while the rest of the code runs.</p>

@@ -4,6 +4,7 @@ function getInputValue(event) {
     const inputField = document.getElementById(event);
     const inputValueString = inputField.value;
     const inputValueNumber = parseFloat(inputValueString);
+    inputField.value='';
     return inputValueNumber;
 };
 
@@ -27,7 +28,7 @@ function displayData(serialNumber, shapeName, area) {
     let button = document.createElement("button");
     let td = document.createElement("td");
     button.innerHTML = `
-    <p id="convert" style="color:white;padding:10px 14px; background-color:blue; border-radius:12px ">Convert to m<sup>2</sup> </p>
+    <p class="convert" style="color:white;padding:10px 14px; background-color:blue; border-radius:12px ">Convert to m<sup>2</sup> </p>
     `
     td.append(button);
     tr.append(td);
@@ -54,13 +55,16 @@ for (const eachClass of allClass) {
 
 //input validation
 function checkInput(base,height){
-    if(isNaN(base)|| isNaN(height) || base<0 || height<0)
-    {
-        alert('Please provide valid input');
+  
+     if(base<0 || height<0){
+        alert('Invalid! Input should not be a negative number.');
         return false;
     }
-    else 
-    return true;
+    else if(isNaN(base)|| isNaN(height)){
+        alert('Invalid! Input must be a number');
+        return false;
+    }
+    else return true;
 }
 
 
