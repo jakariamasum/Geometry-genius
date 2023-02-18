@@ -1,23 +1,27 @@
 
-function getInputValue(event){
-    const inputField=document.getElementById(event); 
-    const inputValueString=inputField.value;
-    const inputValueNumber=parseFloat(inputValueString);
+//get input value by id
+function getInputValue(event) {
+    const inputField = document.getElementById(event);
+    const inputValueString = inputField.value;
+    const inputValueNumber = parseFloat(inputValueString);
     return inputValueNumber;
-}; 
+};
 
-function getTextElementById(event){
-    const elementValue=document.getElementById(event); 
-    const textValue=elementValue.innerText;
+//Get the text value by id
+function getTextElementById(event) {
+    const elementValue = document.getElementById(event);
+    const textValue = elementValue.innerText;
     return textValue;
-}; 
+};
 
-function displayData(serialNumber,shapeName,area){
-    const tr=document.createElement('tr');
-    tr.innerHTML=`
+//create a tr element and display the tr in table using js
+
+function displayData(serialNumber, shapeName, area) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
     <td>${serialNumber}</td>
     <td>${shapeName}</td>
-    <td>${area.innerHTML=
+    <td>${area.innerHTML =
         `${area}cm<sup>2</sup>`}
         </td>
     `;
@@ -28,11 +32,26 @@ function displayData(serialNumber,shapeName,area){
     `
     td.append(button);
     tr.append(td);
-    const tableBody=document.getElementById('t-body');
+    const tableBody = document.getElementById('t-body');
     tableBody.appendChild(tr);
 };
 
 
-function convertToMeter(number){
-    return (number/100);
+// random color section 
+function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+        color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
 }
+const allClass = document.getElementsByClassName('card');
+for (const eachClass of allClass) {
+    eachClass.addEventListener('mouseover', function () {
+    eachClass.style.backgroundColor = randomColor();
+    })
+}
+
+
+
+
