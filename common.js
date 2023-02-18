@@ -47,9 +47,21 @@ function randomColor() {
 }
 const allClass = document.getElementsByClassName('card');
 for (const eachClass of allClass) {
-    eachClass.addEventListener('mouseover', function () {
+    eachClass.addEventListener('mouseenter', function () {
     eachClass.style.backgroundColor = randomColor();
     })
+}
+
+
+//input validation
+function checkInput(base,height){
+    if(isNaN(base)|| isNaN(height) || base<0 || height<0)
+    {
+        alert('invalid');
+        return false;
+    }
+    else 
+    return true;
 }
 
 
